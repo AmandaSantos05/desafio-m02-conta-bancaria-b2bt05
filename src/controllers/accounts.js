@@ -72,8 +72,6 @@ const updateAccount = (req, res) => {
 const deleteAccount = (req, res) => {
     const numeroConta = Number(req.params.numeroConta);
 
-    numeroContaInvalido;
-
     const accounts = contas.find(conta => conta.numero === numeroConta);
 
     if (!accounts) {
